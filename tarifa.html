@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es_CL">
+<head>
+	<title>InfoBip!</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="CONTENT">
+	<meta name="author" content="Caterina Da Silva">
+	<!-- Bootstrap Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css">
+	<!-- Fontawesome -->
+	<script src="https://use.fontawesome.com/d2c9b2c5c1.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">InfoBip!</a>
+		</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li><a href="home.html"><span><i class="fa fa-home" aria-hidden="true"></i></span>Home</a></li>
+				<li><a href="saldo.html"><span><i class="fa fa-usd" aria-hidden="true"></i></span>Ver saldo</a></li>
+				<li class="active"><a href="tarifa.html"><span><i class="fa fa-th" aria-hidden="true"></i></span>Calcular tarifa</a></li>
+				<li><a href="perfil.html"><span><i class="fa fa-user" aria-hidden="true"></i></span>Perfil</a></li>
+				<li><a href="faq.html"><span><i class="fa fa-question-circle-o" aria-hidden="true"></i></span>Preguntas frecuentes</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
+<header>
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-xs-12">
+				<h4>Calcula tu tarifa</h4>
+			</div>
+		</div>
+	</div>
+</header>
+<section id="tarifa-form" >
+	<div class="container">
+		<div class="row">
+			<form class="col-xs-12">
+				<div class="form-group">
+					<label for="selectHorario">Escoje el horario</label>
+					<select id="selectHorario" class="form-control input-lg">
+						<option value="" disabled selected>Escoje el horario</option>
+						<option value="740">Punta</option>
+						<option value="680">Valle</option>
+						<option value="640">Bajo</option>
+					</select>
+				</div>
+				<hr>
+				<div class="form-group">
+					<label for="input-numero">Ingresa tu número de tarjeta</label>
+					<input type="number" class="form-control input-lg" id="input-numero" placeholder="Número de tarjeta">
+				</div>
+				<div class="lines-o">
+					<p>O</p>
+				</div>
+				<div class="form-group">
+					<label for="selectBip">Elije una de tus tarjetas guardadas</label>
+					<select id="selectBip" class="form-control input-lg bip-storage">
+						<option disabled selected>Elije una tarjeta</option>
+					</select>
+				</div>
+				<button type="submit" id="calc-tarifa" class="btn btn-primary btn-lg btn-block">Calcular tarifa</button>
+			</form>
+		</div>
+	</div>
+</section>
+<section id="tarifa-res" >
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div id="costo-pasaje" class="box-container">
+					<!--div class="box">
+						<div class="top">
+							<p class="lead">Costo pasaje</p>
+						</div>
+						<div class="bot">
+							<span>$680</span>
+						</div>
+					</div-->
+				</div>
+				<div id="saldo-final" class="box-container">
+					<!--div class="box">
+						<div class="top">
+							<p class="lead">Saldo final</p>
+						</div>
+						<div class="bot">
+							<span>$800</span>
+						</div>
+					</div-->
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Bootstrap Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="assets/js/tarifa.js" ></script>
+</body>
+</html>
