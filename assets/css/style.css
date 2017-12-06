@@ -61,6 +61,11 @@ table {
     float: none;
     height: inherit;
     text-align: center;
+    color: transparent;
+    background-image: url('../img/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     display: block;
 }
 .navbar-toggle {
@@ -75,17 +80,17 @@ table {
     background-color: #fff;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: #fff;
-    background-color: #1572b1;
+    color: #fbb800;
+    background-color: rgba(0,0,0,.075);
 }
 .navbar-default .navbar-brand {
-    color: #fff;
+    color: transparent;
     text-transform: uppercase;
     font-size: 16px;
     background-color: #1572b1;
 }
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
-    color: #fff;
+    color: transparent;
     background-color: #1572b1;
 }
 .navbar-collapse {
@@ -93,7 +98,7 @@ table {
     width: 70vw;
     background-color: #fff;
     height: 100vh;
-    top: 0;
+    top: -1px;
     box-shadow: rgba(0, 0, 0, 0.50) 30vh 0px;
     z-index: 100;
 }
@@ -113,6 +118,16 @@ table {
     display: inline-block;
     text-align: center;
     margin-right: 10px;
+}
+li.menu-head {
+    background-color: #1572b1;
+    color: transparent;
+    height: 50px;
+    background-image: url('../img/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 5px solid #1572b1;
 }
 
 /*
@@ -201,7 +216,7 @@ header img {
     margin: 24px 0 16px;
 }
 .box .top {
-    background: #3E3F41;
+    background: #1572b1;
     text-align: center;
     color: #fff;
     padding: 5px 0;
@@ -211,9 +226,9 @@ header img {
     margin: 0;
 }
 .box .bot {
-    background: #a9a9ab;
+    background: #eee;
     text-align: center;
-    color: #fff;
+    color: #555;
     padding: 15px 0;
     font-size: 36px;
     font-weight: 700;
@@ -223,6 +238,7 @@ h4.panel-title {
     border: none;
     color: #fbb800;
     font-weight: 700;
+    text-transform: none;
 }
 .panel-title, .panel-title>a {
     display: block;

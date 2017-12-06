@@ -53,11 +53,10 @@ table {
 // Estilos para Inicio
 */
 header {
-    padding: 15vh 0;
+    padding: 25vh 0 0;
     height: 55vh;
 }
 header .logo {
-    width: 150px;
     display: inline-block;
 }
 header h1 {
@@ -88,7 +87,7 @@ header h1 {
 	background-image: url(../img/password.png);
 }
 .btn-primary {
-    color: #1572b1;
+    color: #fff;
     background-color: #fbb800;
     border-color: #fbb800;
     border-radius: 0;
